@@ -1,6 +1,6 @@
 
 name: arcade_quiz
-description: A retro-arcade themed multiple choice quiz app
+description: multiple choice quiz app
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -21,3 +21,4 @@ flutter:
     - assets/images/logo.png
     - assets/icons/coin.png
     - assets/icons/heart.png
+
