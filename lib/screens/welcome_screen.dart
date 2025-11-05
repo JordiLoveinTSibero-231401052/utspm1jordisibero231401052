@@ -1,10 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/quiz_provider.dart';
 import '../widgets/theme_toggle.dart';
 import '../widgets/reusable_textfield.dart';
-import '../widgets/arcade_button.dart';
 import 'quiz_screen.dart';
 import '../utils/responsive.dart';
 
@@ -28,47 +26,141 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   Widget build(BuildContext context) {
     final provider = Provider.of<QuizProvider>(context);
     final r = Responsive.of(context);
+    final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(child: Image.asset('assets/images/bg_arcade.png', fit: BoxFit.cover)),
+          // Background arcade
+          Positioned.fill(
+            child: Image.asset(
+              'assets/images/bg_arcade.png',
+              fit: BoxFit.cover,
+            ),
+          ),
           SafeArea(
             child: Padding(
               padding: EdgeInsets.all(r.dp(16)),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  // Top bar: theme toggle
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: const [
-                      SizedBox(),
                       ThemeToggle(),
                     ],
                   ),
-                  SizedBox(height: r.dp(20)),
-                  Row(
+                  const Spacer(),
+
+                  // Logo dan judul di tengah
+                  Column(
                     children: [
-                      Image.asset('assets/images/logo.png', width: r.dp(80), height: r.dp(80)),
-                      SizedBox(width: r.dp(12)),
-                      Text('Arcade Quiz', style: Theme.of(context).textTheme.headlineSmall),
+                      Image.asset(
+                        'assets/images/logo.png',
+                        width: r.dp(350),
+                        height: r.dp(350),
+                      ),
+                      SizedBox(height: r.dp(16)),
+                      Text(
+                        'Test U Punya Skill',
+                        style: TextStyle(
+                          fontSize: r.dp(32),
+                          fontWeight: FontWeight.bold,
+                          color: Colors.yellowAccent,
+                          shadows: const [
+                            Shadow(
+                              color: Colors.redAccent,
+                              offset: Offset(3, 3),
+                              blurRadius: 2,
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: r.dp(24)),
+                      Text(
+                        'ENTER YOUR GAMERTAG',
+                        style: TextStyle(
+                          fontSize: r.dp(18),
+                          color: Colors.white70,
+                        ),
+                      ),
+                      SizedBox(height: r.dp(8)),
+                      SizedBox(
+                        width: screenWidth * 0.6,
+                        child: ReusableTextField(
+                          controller: _nameCtl,
+                          hint: 'Player...',
+                        ),
+                      ),
+                      SizedBox(height: r.dp(20)),
+
+                      // Tombol Mulai Game dengan style mirip judul
+                      GestureDetector(
+                        onTap: () {
+                          if (_nameCtl.text.trim().isEmpty) return;
+                          provider.setName(_nameCtl.text.trim());
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const QuizScreen(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          padding: EdgeInsets.symmetric(
+                              vertical: r.dp(16), horizontal: r.dp(32)),
+                          decoration: BoxDecoration(
+                            color: Colors.yellowAccent,
+                            borderRadius: BorderRadius.circular(r.dp(8)),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Colors.redAccent,
+                                offset: Offset(3, 3),
+                                blurRadius: 4,
+                              ),
+                              BoxShadow(
+                                color: Colors.orangeAccent,
+                                offset: Offset(-2, -2),
+                                blurRadius: 4,
+                              ),
+                            ],
+                          ),
+                          child: Text(
+                            'START',
+                            style: TextStyle(
+                              fontSize: r.dp(28),
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                              shadows: const [
+                                Shadow(
+                                  color: Colors.redAccent,
+                                  offset: Offset(2, 2),
+                                  blurRadius: 2,
+                                ),
+                                Shadow(
+                                  color: Colors.orangeAccent,
+                                  offset: Offset(-1, -1),
+                                  blurRadius: 2,
+                                ),
+                              ],
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
-                  SizedBox(height: r.dp(20)),
-                  Text('Masukkan nama pemain', style: Theme.of(context).textTheme.titleMedium),
-                  SizedBox(height: r.dp(8)),
-                  ReusableTextField(controller: _nameCtl, hint: 'Nama...'),
-                  SizedBox(height: r.dp(20)),
-                  ArcadeButton(
-                    text: 'Mulai Game',
-                    onTap: () {
-                      if (_nameCtl.text.trim().isEmpty) return;
-                      provider.setName(_nameCtl.text.trim());
-                      Navigator.push(context, MaterialPageRoute(builder: (_) => const QuizScreen()));
-                    },
-                  ),
+
                   const Spacer(),
-                  Text('© ArcadeQuiz • Retro UI', style: Theme.of(context).textTheme.bodySmall)
+
+                  // Footer
+                  Text(
+                    '© QuizStation • jrdsbr_',
+                    style: TextStyle(
+                      fontSize: r.dp(12),
+                      color: Colors.white54,
+                    ),
+                  ),
                 ],
               ),
             ),
