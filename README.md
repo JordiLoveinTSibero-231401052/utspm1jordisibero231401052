@@ -31,8 +31,8 @@ Prototype :
 
 ## Light Mode
 <img width="346" height="752" alt="image" src="https://github.com/user-attachments/assets/f2d5a12d-247f-4384-90ae-a74efcaf51da" />
-<img width="341" height="752" alt="image" src="https://github.com/user-attachments/assets/13598b9a-8831-4a71-891e-53f9280657a9" />
 <img width="337" height="754" alt="image" src="https://github.com/user-attachments/assets/05430b0b-7a85-471e-ad98-80b2a9b99140" />
+<img width="341" height="752" alt="image" src="https://github.com/user-attachments/assets/13598b9a-8831-4a71-891e-53f9280657a9" />
 <img width="338" height="748" alt="image" src="https://github.com/user-attachments/assets/3f8a7255-10da-4d44-b3a7-a2ad02c33ded" />
 <img width="341" height="755" alt="image" src="https://github.com/user-attachments/assets/8deb283c-6dd9-4c23-ae14-c8d7ba7903ee" />
 
@@ -43,6 +43,7 @@ Prototype :
 <img width="335" height="750" alt="image" src="https://github.com/user-attachments/assets/d78be030-92ab-4d89-a99a-f1c59405a4ae" />
 <img width="330" height="749" alt="image" src="https://github.com/user-attachments/assets/0859a10d-fa09-4bd2-a09b-767b766ef0a1" />
 <img width="340" height="755" alt="image" src="https://github.com/user-attachments/assets/a4e31828-2076-421a-8e0a-dfb6119fa402" />
+
 
 
 
