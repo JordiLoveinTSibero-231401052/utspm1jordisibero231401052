@@ -1,4 +1,3 @@
-
 class Question {
   final String id;
   final String text;
