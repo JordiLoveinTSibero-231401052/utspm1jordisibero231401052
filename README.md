@@ -39,9 +39,11 @@ Prototype :
 
 ## Dark Mode
 <img width="346" height="754" alt="image" src="https://github.com/user-attachments/assets/60207734-276c-4e6f-8921-4a467c4af210" />
+<img width="327" height="755" alt="image" src="https://github.com/user-attachments/assets/96e7aeff-ac16-47d6-8d55-dd3fb264d863" />
 <img width="335" height="750" alt="image" src="https://github.com/user-attachments/assets/d78be030-92ab-4d89-a99a-f1c59405a4ae" />
 <img width="330" height="749" alt="image" src="https://github.com/user-attachments/assets/0859a10d-fa09-4bd2-a09b-767b766ef0a1" />
 <img width="340" height="755" alt="image" src="https://github.com/user-attachments/assets/a4e31828-2076-421a-8e0a-dfb6119fa402" />
+
 
 
 
