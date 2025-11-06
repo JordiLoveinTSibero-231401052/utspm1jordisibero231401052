@@ -4,9 +4,9 @@
 Ujian Tengah Semester Lab Pemrograman Mobile
 
 ## QuizStation
-
 Aplikasi Quiz Sederhana Bertemakan Game Arcade Retro
 
+## Credit
 Credit to a few resources used in this Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
@@ -26,6 +26,9 @@ preference :
 
 # App Preview
 
+Prototype :
+- https://www.figma.com/design/yQbdZVk2UoXF0dIk9vZcOg/QuizStation?node-id=3-3&t=VP8FKlxMMreZmIqK-1
+
 ## Light Mode
 <img width="346" height="752" alt="image" src="https://github.com/user-attachments/assets/f2d5a12d-247f-4384-90ae-a74efcaf51da" />
 <img width="341" height="752" alt="image" src="https://github.com/user-attachments/assets/13598b9a-8831-4a71-891e-53f9280657a9" />
@@ -35,13 +38,10 @@ preference :
 
 ## Dark Mode
 <img width="346" height="754" alt="image" src="https://github.com/user-attachments/assets/60207734-276c-4e6f-8921-4a467c4af210" />
-<img width="337" height="754" alt="image" src="https://github.com/user-attachments/assets/05430b0b-7a85-471e-ad98-80b2a9b99140" />
 <img width="335" height="750" alt="image" src="https://github.com/user-attachments/assets/d78be030-92ab-4d89-a99a-f1c59405a4ae" />
 <img width="330" height="749" alt="image" src="https://github.com/user-attachments/assets/0859a10d-fa09-4bd2-a09b-767b766ef0a1" />
 <img width="339" height="754" alt="image" src="https://github.com/user-attachments/assets/e5b9f807-545b-4268-8e93-10085afac0af" />
 
-Prototype :
-- https://www.figma.com/design/yQbdZVk2UoXF0dIk9vZcOg/QuizStation?node-id=3-3&t=VP8FKlxMMreZmIqK-1
 
 
 
