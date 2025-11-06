@@ -1,5 +1,5 @@
 
-name: arcade_quiz
+name: QuizStation
 description: multiple choice quiz app
 publish_to: 'none'
 version: 1.0.0+1
@@ -19,6 +19,4 @@ flutter:
   assets:
     - assets/images/bg_arcade.png
     - assets/images/logo.png
-    - assets/icons/coin.png
-    - assets/icons/heart.png
-
+    - assets/icons/trophy.png
