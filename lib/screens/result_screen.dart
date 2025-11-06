@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import '../providers/quiz_provider.dart';
 import '../utils/responsive.dart';
 import '../widgets/theme_toggle.dart';
-import '../widgets/arcade_button.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key});
@@ -14,7 +13,10 @@ class ResultScreen extends StatelessWidget {
     final score = provider.score;
     final name = provider.playerName;
     final r = Responsive.of(context);
-    final screenWidth = MediaQuery.of(context).size.width;
+
+    // Warna neon kuning
+    const neonYellow = Color(0xFFFFFF00);
+    const neonYellowGlow = Color(0xFFFFEE33);
 
     return Scaffold(
       body: Stack(
@@ -41,7 +43,7 @@ class ResultScreen extends StatelessWidget {
 
                   const Spacer(),
 
-                  // Konten utama di tengah
+                  // Konten utama
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -57,14 +59,19 @@ class ResultScreen extends StatelessWidget {
                       Text(
                         'GAME OVER, $name!',
                         style: TextStyle(
-                          fontSize: r.dp(26),
+                          fontSize: r.dp(28),
                           fontWeight: FontWeight.bold,
-                          color: const Color(0xFF39FF14),
-                          shadows: const [
+                          color: neonYellow,
+                          shadows: [
                             Shadow(
-                              color: Color(0xFF00FF66),
-                              offset: Offset(2, 2),
-                              blurRadius: 8,
+                              color: neonYellowGlow.withOpacity(0.8),
+                              blurRadius: 12,
+                              offset: const Offset(0, 0),
+                            ),
+                            Shadow(
+                              color: neonYellowGlow.withOpacity(0.5),
+                              blurRadius: 24,
+                              offset: const Offset(0, 0),
                             ),
                           ],
                         ),
@@ -84,18 +91,19 @@ class ResultScreen extends StatelessWidget {
                       Text(
                         '$score',
                         style: TextStyle(
-                          fontSize: r.dp(48),
+                          fontSize: r.dp(52),
                           fontWeight: FontWeight.bold,
-                          color: const Color(0xFF39FF14),
-                          shadows: const [
+                          color: neonYellow,
+                          shadows: [
                             Shadow(
-                              color: Color(0xFF00FF66),
-                              offset: Offset(3, 3),
-                              blurRadius: 10,
+                              color: neonYellowGlow.withOpacity(0.8),
+                              blurRadius: 14,
+                              offset: const Offset(0, 0),
                             ),
                             Shadow(
-                              color: Colors.greenAccent,
-                              blurRadius: 20,
+                              color: neonYellowGlow.withOpacity(0.5),
+                              blurRadius: 28,
+                              offset: const Offset(0, 0),
                             ),
                           ],
                         ),
@@ -103,7 +111,7 @@ class ResultScreen extends StatelessWidget {
 
                       SizedBox(height: r.dp(40)),
 
-                      // "Restart"
+                      // Tombol "Restart"
                       GestureDetector(
                         onTap: () {
                           provider.reset();
@@ -111,34 +119,34 @@ class ResultScreen extends StatelessWidget {
                         },
                         child: Container(
                           padding: EdgeInsets.symmetric(
-                              vertical: r.dp(16), horizontal: r.dp(32)),
+                              vertical: r.dp(16), horizontal: r.dp(36)),
                           decoration: BoxDecoration(
-                            color: const Color(0xFF39FF14),
-                            borderRadius: BorderRadius.circular(r.dp(10)),
-                            boxShadow: const [
+                            color: neonYellow,
+                            borderRadius: BorderRadius.circular(r.dp(12)),
+                            boxShadow: [
                               BoxShadow(
-                                color: Color(0xFF00FF66),
-                                offset: Offset(3, 3),
-                                blurRadius: 8,
+                                color: neonYellowGlow.withOpacity(0.7),
+                                offset: const Offset(4, 4),
+                                blurRadius: 12,
                               ),
                               BoxShadow(
-                                color: Colors.greenAccent,
-                                offset: Offset(-2, -2),
-                                blurRadius: 4,
+                                color: neonYellowGlow.withOpacity(0.4),
+                                offset: const Offset(-3, -3),
+                                blurRadius: 6,
                               ),
                             ],
                           ),
                           child: Text(
                             'Restart',
                             style: TextStyle(
-                              fontSize: r.dp(24),
+                              fontSize: r.dp(26),
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
-                              shadows: const [
+                              shadows: [
                                 Shadow(
-                                  color: Colors.greenAccent,
-                                  offset: Offset(1, 1),
-                                  blurRadius: 2,
+                                  color: neonYellowGlow.withOpacity(0.8),
+                                  blurRadius: 6,
+                                  offset: const Offset(1, 1),
                                 ),
                               ],
                             ),
