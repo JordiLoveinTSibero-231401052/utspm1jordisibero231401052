@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// 🎨 Warna neon
-const Color neonBlueDark = Color(0xFF005CFF); // biru gelap neon elegan
-const Color neonGreen = Color(0xFF39FF14);    // hijau neon cerah
+// Warna neon
+const Color neonBlueDark = Color(0xFF005CFF);
+const Color neonGreen = Color(0xFF39FF14);
 
 final ColorScheme lightColors = ColorScheme.fromSeed(
   seedColor: neonBlueDark,
@@ -15,7 +15,7 @@ final ColorScheme darkColors = ColorScheme.fromSeed(
   brightness: Brightness.dark,
 );
 
-// 🔥 TextStyle dasar dengan efek glow
+// TextStyle dasar dengan efek glow
 TextStyle neonText(Color color) => GoogleFonts.pressStart2p(
   color: color,
   shadows: [
@@ -32,7 +32,7 @@ TextStyle neonText(Color color) => GoogleFonts.pressStart2p(
   ],
 );
 
-// 🌞 LIGHT THEME (putih transparan + teks biru gelap neon)
+// LIGHT THEME
 final ThemeData lightTheme = ThemeData(
   useMaterial3: true,
   brightness: Brightness.light,
@@ -70,7 +70,7 @@ final ThemeData lightTheme = ThemeData(
   iconTheme: const IconThemeData(color: neonBlueDark),
 );
 
-// 🌙 DARK THEME (hitam transparan + teks hijau neon glow)
+// DARK THEME
 final ThemeData darkTheme = ThemeData(
   useMaterial3: true,
   brightness: Brightness.dark,
