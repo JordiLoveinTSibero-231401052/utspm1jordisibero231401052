@@ -25,7 +25,7 @@ class QuizProvider extends ChangeNotifier {
     if (answered) return;
     answered = true;
     if (questions[currentIndex].correctIndex == optionIndex) {
-      score += 10;
+      score += 20;
     }
     notifyListeners();
   }
