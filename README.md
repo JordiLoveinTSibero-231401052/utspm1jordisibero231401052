@@ -14,7 +14,7 @@ Credit to a few resources used in this Flutter project:
 - Background bg_arcade.png — Pinterest (https://pin.it/5NtAg42F5)
 - Quiz Station Logo - Created by me using PicsArt
 - Icon trophy.png — Pinterest (https://pin.it/5NBoXdnJC)
-- Font : “Press Start 2P” — oleh CodeMan38, lisensi SIL Open Font License 1.1 (fonts.google.com)
+- Font : “Press Start 2P” — oleh CodeMan38, lisensi SIL Open Font License 1.1 (https://fonts.google.com/specimen/Press+Start+2P)
 - Framework Flutter — © Google, BSD 3-Clause License
 - Package Provider — © Remi Rousselet, MIT License
 - Package Google Fonts — © Google, Apache License 2.0
@@ -42,6 +42,7 @@ preference :
 
 Prototype :
 - https://www.figma.com/design/yQbdZVk2UoXF0dIk9vZcOg/QuizStation?node-id=3-3&t=VP8FKlxMMreZmIqK-1
+
 
 
 
