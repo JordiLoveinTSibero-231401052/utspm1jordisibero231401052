@@ -26,10 +26,10 @@ class _QuizScreenState extends State<QuizScreen>
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
-    // 🌈 Warna neon tergantung mode
+    // Warna tergantung mode
     final Color neonColor = isDark
-        ? const Color(0xFF00FF99) // Hijau neon (dark mode)
-        : const Color(0xFF2979FF); // Biru neon (light mode)
+        ? const Color(0xFF00FF99) //dark mode
+        : const Color(0xFF2979FF); //light mode
 
     final question = provider.questions[provider.currentIndex];
 
