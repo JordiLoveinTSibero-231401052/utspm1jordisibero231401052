@@ -27,7 +27,7 @@ preference :
 # App Preview
 
 Prototype :
-- https://www.figma.com/design/yQbdZVk2UoXF0dIk9vZcOg/QuizStation?node-id=3-3&t=VP8FKlxMMreZmIqK-1
+- https://www.figma.com/design/yQbdZVk2UoXF0dIk9vZcOg/QuizStation?node-id=0-1&t=2fo7SHecDFtTvOH7-1
 
 ## Light Mode
 <img width="346" height="752" alt="image" src="https://github.com/user-attachments/assets/f2d5a12d-247f-4384-90ae-a74efcaf51da" />
@@ -41,6 +41,7 @@ Prototype :
 <img width="335" height="750" alt="image" src="https://github.com/user-attachments/assets/d78be030-92ab-4d89-a99a-f1c59405a4ae" />
 <img width="330" height="749" alt="image" src="https://github.com/user-attachments/assets/0859a10d-fa09-4bd2-a09b-767b766ef0a1" />
 <img width="339" height="754" alt="image" src="https://github.com/user-attachments/assets/e5b9f807-545b-4268-8e93-10085afac0af" />
+
 
 
 
